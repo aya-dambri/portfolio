@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="portfolio.css">
+    <title>portfolio</title>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <img class="logo" src="logo.jpg" alt="logo">
+            <div class="links">
+                <a href="#Home">Home</a>
+                <a href="#About">About</a>
+                <a href="#Service">Services</a>
+                <a href="#Skill">Skills</a>
+                <a href="#Project">Projects</a>
+                <a href="#Contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- HOME SECTION -->
+    <section id="Home" class="home">
+        <div class="home-content">
+            <div class="text">
+                <div class="text-one">Hello, I am <span>Aya Dambri</span></div>
+                <div class="text-two">And I am a web Developer</div>
+                <div class="text-three">Welcome to my official Portfolio Website where i put all my projects and designs and many more.</div>
+                <a class="button" href="#">Hire me</a>
+            </div>
+            <img class="blob2" src="blob2.png" alt="">
+        </div>
+    </section>
+    <!-- ABOUT SECTION -->
+    <section id="About" class="about">
+        <div class="title">
+            <div class="title-one">About me</div>
+            <div class="title-two">Who i am</div>
+        </div>
+        <div class="about-content">
+            <img class="blob1" src="blob1.png" alt="">
+            <article>
+                <span>Hi, I am Aya Dambri</span>
+                <p>and i am a web developer linving in Ain Mlila, Algeria. I have a master's dgree in Computer Science from 
+                    Faculty of New Information and Communication Technologies, Constantine 2 University - Abdelhamid Mehri.
+                    I enjoy coding and turning complex problems into simple and beautiful designs and websites.
+                </p>
+                <a class="button" href="http://localhost/PHP/insert.php">Download CV</a>
+            </article>
+        </div>
+    </section>
+    <!-- SERVICES SECTION -->
+    <section id="Service" class="service">
+        <div class="title">
+            <div class="title-one">My Services</div>
+            <div class="title-two">What i offer</div>
+        </div>
+        <div class="containers">
+            <div class="box">
+                <span>Web Development</span>
+                <p>Using the best languages of Web Development : HTML, CSS, JavaScript and PHP.</p>
+            </div>
+            <div class="box">
+                <span>Web Design</span>
+                <p>Using the best tools of Web Design : Adobe Photoshop and Adobe Illulstrator.</p>
+            </div>
+            <div class="box">
+                <span>Responsive Web Design </span>
+                <p>Creating web pages that look good on all devices.</p>
+            </div>
+        </div>
+    </section>
+    <!-- SKILLS SECTION -->
+    <section id="Skill" class="skill">
+        <div class="title">
+            <div class="title-one">My Skills</div>
+            <div class="title-two">What i know</div>
+        </div>
+        <div class="skills-content">
+            <div class="info"><span>HTML</span><span>90%</span></div>
+            <div class="total"><div class="percentage-html"></div></div>
+            <div class="info"><span>CSS</span><span>90%</span></div>
+            <div class="total"><div class="percentage-css"></div></div>
+            <div class="info"><span>JavaScript</span><span>70%</span></div>
+            <div class="total"><div class="percentage-java"></div></div>
+            <div class="info"><span>PHP</span><span>70%</span></div>
+            <div class="total"><div class="percentage-php"></div></div>
+            <div class="info"><span>MYSQL</span><span>70%</span></div>
+            <div class="total"><div class="percentage-sql"></div></div> 
+        </div>
+    </section>
+    <!-- PROJECT SECTION -->
+    <section id="Project" class="project">
+        <div class="title">
+            <div class="title-one">My Projects</div>
+            <div class="title-two">What i did</div>
+        </div>
+        <div class="containers">
+            <div class="box">
+                <span>First Project</span>
+            </div>
+            <div class="box">
+            <span>Second Project</span> 
+            </div>
+            <div class="box">
+                <span>Third Project</span>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT SECTION -->
+    <section id="Contact" class="contact">
+        <div class="title">
+            <div class="title-one">Contact me</div>
+            <div class="title-two">Get in touch</div>
+        </div>
+        <div class="contact-content">
+            <div class="informations">
+                <p>If you have a question or any enquery, just fill the form below and let's contact</p>
+                <div class="list">
+                    <ul>
+                        <li class="item">Name</li>
+                        <li>Eya Dambri</li>
+                        <li class="item">Address</li>
+                        <li>Algeria,Ain Mlila</li>
+                        <li class="item">Links</li>
+                        <li> 
+                            <a href="https://www.facebook.com/profile.php?id=100069751028163">facebook</a> 
+                            | 
+                            <a href="https://www.linkedin.com/in/aya-dambri-924558229/">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="form">
+                <form action="http://localhost/PHP/send_mail.php" method="post">
+                    <input  class="name" type="text" name="name" placeholder="Name" required>
+                    <input  class="email" type="email" name="email" placeholder="Email" required>
+                    <br>
+                    <input class="subject" type="text" name="subject" placeholder="Subject">
+                    <br>
+                    <textarea name="message" placeholder="Message" required></textarea>
+                    <br>
+                    <input class="button" type="submit" value="Send Message">
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer">
+            Created By <span>Aya Dambri</span> |  2022 All Rights Reserved
+        </div>
+    </footer>
+</body>
+</html>

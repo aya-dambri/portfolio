@@ -1,0 +1,517 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar 
+{
+    width: 10px;
+}
+::-webkit-scrollbar-track 
+{
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb 
+{
+    background: rgb(175, 174, 174);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover 
+{
+    background:#776483;
+}
+.home-content,.about-content,.containers,.skills-content,.title,.footer
+{
+    width: 1356px;
+}
+.service, .about,.skill, .project
+{
+    height:80vh;
+}
+body
+{
+    background-color: #e7e2e7;
+    font-family: sans-serif;
+}
+nav
+{
+    position: fixed;
+    z-index: 1;
+    width:100%;
+    height:12vh;
+    background-color: #e7e2e7;
+}
+nav .navbar
+{
+    display: flex;
+    justify-content: space-between;
+}
+nav .navbar img 
+{
+    width: 50px;
+    height: 50px;
+    margin:20px 0 0 100px;
+    animation-name: logo;
+    animation-duration: 2.5s;
+}
+@keyframes logo
+{
+    0%
+    {
+        margin:-200px 0 0 100px;
+    }
+    100%
+    {
+        margin:20px 0 0 100px;
+    }
+}
+nav .navbar img:hover
+{
+    transform: scale(1.10);
+}
+nav .navbar .links
+{
+    display: flex;
+    padding: 30px 100px 0 0;
+}
+nav .navbar .links a
+{
+    padding-left: 30px;
+    color: black;
+    font-size: 18px;
+}
+nav .navbar .links a:hover
+{
+    color:#776483;
+    transform: scale(1.10);
+}
+/*HOME*/
+.home
+{
+    height:100vh;
+    width: 100%;
+}
+.home .home-content
+{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.blob2
+{
+    width: 450px;
+    height: 450px;
+    margin:10% 100px 0 100px;
+}
+.blob2:hover,.blob1:hover
+{
+    transform: scale(1.05);
+}
+.text 
+{
+    color: black;
+    font-weight: bold;
+    margin-left:100px;
+    font-size: 35px;
+}
+.text .text-one span
+{
+    font-size: 45px;
+    color: #776483;
+}
+.text .text-three
+{
+    width: 400px;
+    font-size:17px;
+    font-weight: normal;
+    padding: 10px 0 5% 0;
+}
+.button 
+{
+    padding: 13px 55px;
+    background-color:#776483;
+    border-radius:10px;
+    color: white;
+    font-size: 22px;
+    font-weight: normal;
+}
+.button:hover
+{
+    background-color: transparent;
+    border: #776483 2px solid;
+    color:#776483;
+    transform: scale(1.05);
+}
+/* image space */
+/*ABOUT ME*/
+.title
+{
+    text-align: center;
+    font-weight: bold;
+}
+.title-one
+{
+    padding-top: 90px;
+    text-align: center;
+    font-size: 25px; 
+}
+.title-two
+{
+    padding-top: 10px;
+    font-size: 20px;  
+}
+.title-two::before
+{
+    content: " ";
+    position: absolute;
+    margin-top: 10px;
+    width:50px;
+    height: 4px;
+    background-color: #776483;
+    transform: translateX(-125%);
+}
+.title-two::after
+{
+    content: " ";
+    position: absolute;
+    margin-top: 10px;
+    width:50px;
+    height:4px;
+    background-color: #776483;
+    transform: translateX(30%);
+}
+.about-content
+{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.blob1
+{
+    width: 400px;
+    height: 400px;
+    margin-left:100px;
+}
+article
+{
+    margin:0 100px 0 15%;
+}
+article p
+{
+    font-size: 17px;
+    padding: 10px 15px 5% 0;
+}
+article span
+{
+    font-size: 22px;
+    font-weight: bold;
+}
+/*SERVICES*/
+.containers
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 7%;
+}
+.containers .box
+{
+    width: 350px;
+    height: 185px;
+    text-align: center;
+    padding: 40px 5px 5px 5px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 12%);
+}
+.containers .box:hover
+{
+    border: #776483 2px solid;
+    border-radius: 10px;
+    transform: scale(1.05);
+}
+.containers .box p
+{
+    font-size: 17px;
+    padding-top: 15px;
+}
+.containers .box span
+{
+    font-weight: bold;
+    font-size: 20px;
+}
+/*SKILLS*/
+.skills-content
+{
+    display: grid;
+    justify-content: center;
+    margin-top: 7%;
+    height: 250px;
+}
+.info
+{
+    display: flex;
+    justify-content: space-between;
+}
+.total
+{
+    width: 500px;
+    height:7px;
+    background-color:rgb(201, 200, 200);
+}
+.percentage-html,.percentage-css
+{
+    height: 7px;
+    width: 450px;
+    background-color: #776483;
+}
+.percentage-java,.percentage-php,.percentage-sql
+{
+    width: 350px;
+    height: 7px;
+    background-color: #776483;
+}
+/*CONTACT*/
+.contact
+{
+    height:90vh;
+}
+.contact-content
+{
+    display: flex;
+}
+.informations
+{
+    margin: 5% 0 0 70px;
+}
+.informations p
+{
+    font-size: 17px;
+    padding-bottom:10px;
+}
+.list ul li ,.list ul li a
+{
+    color: black;
+    list-style: none;
+    font-size: 15px;
+}
+.list ul li a:hover
+{
+    color: #776483;
+}
+.list .item
+{
+    font-weight: bold;
+    font-size: 18px;
+    padding:10px 0 5px 0;
+}
+.form
+{
+    margin:5% 30px 0 70px ;
+}
+.form .name,.email ,.subject ,textarea
+{
+    padding: 17px 0px 17px 20px;
+    width:280px;
+    margin: 0 15px 20px 0;
+    border: rgb(175, 174, 174) 2px solid;
+    border-radius: 10px;
+    background-color: transparent;
+}
+.form .subject,textarea
+{
+    padding: 15px 0 15px 20px;
+    width: 580px;
+}
+.form .name:hover ,.email:hover ,.subject:hover ,textarea:hover
+{
+    border: #776483 2px solid;
+    outline: none;
+}
+.form .button
+{
+    border: 2px #776483 solid;
+}
+/*FOOTER*/
+.footer
+{
+    height:8vh;
+    text-align: center;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    font-size: 18px;
+    padding: 18px 0;
+}
+footer span
+{
+    color: #776483;
+}
+/***********************************RESPONSIVE DESIGN***************************************/
+@media (max-width: 1075px)
+{
+    .home-content,.about-content,.containers,.skills-content,.title,.contact-content,.footer
+    {
+        width: 1075px;
+    }
+    .home
+    {
+        height: 80vh;
+    }
+    .about
+    {
+        height:90vh;
+    }
+    article
+    {
+        margin:0 20px 0 10%;
+    }
+    .blob2,.blob1
+    {
+        width: 400px;
+        height: 400px;
+    }
+    .containers .box
+    {
+        width: 315px;
+    }
+}
+@media (max-width: 900px)
+{
+    .home-content,.about-content,.containers,.skills-content,.title,.contact-content,.footer
+    {
+        width: 900px;
+    }
+    article p
+    {
+        margin:0 20px 20px 0%;
+    }
+    .blob2
+    {
+        width: 300px;
+        height: 300px;
+        margin:12% 50px 0 50px;
+    }
+    .blob1
+    {
+        width: 350px;
+        height: 350px;
+        margin-left:50px;
+    }
+    .containers .box
+    {
+        width: 260px;
+    } 
+    .form .name,.email ,.subject ,textarea
+    {
+        width:215px;
+    }
+    .form .subject,textarea
+    {
+        width: 450px;
+    }
+}
+@media (max-width: 700px)
+{
+    .home-content,.about-content,.containers,.skills-content,.title,.contact-content,.footer
+    {
+        width: 700px;
+    }
+    nav .navbar .links
+    {
+        display: none;
+    }
+    .text 
+    {
+        margin-left:50px;
+    }
+    .blob2,.blob1
+    {
+        width: 200px;
+        height: 350px;
+    }
+    .service,.project
+    {
+        height: 115vh;
+    }
+    .containers
+    {
+        display: grid;
+        height: 90vh;
+        margin-top:5%;
+    }
+    .containers .box
+    {
+        width: 550px;
+        height: 150px;
+    }
+    .contact
+    {
+        height: 125vh;
+    }
+    .contact-content
+    {
+        display: grid;
+    }
+    
+    .form .name,.email ,.subject ,textarea
+    {
+        width:280px;
+    }
+    .form .subject,textarea
+    {
+        width: 580px;
+    }
+}
+@media (max-width: 500px)
+{
+    .home-content,.about-content,.containers,.skills-content,.title,.contact-content,.footer
+    {
+        width: 500px;
+    }
+    .text
+    {
+        position: absolute;
+    }
+    .blob2,.blob1
+    {
+        display: none;
+    }
+    article
+    {
+        padding-top: 10%;
+    }
+    .button
+    {
+        margin-left: 15%;
+    }
+    .containers .box
+    {
+        width: 400px;
+        height: 150px;
+    }
+    .total
+    {
+        width: 300px;
+    }
+    .percentage-html,.percentage-css
+    {
+        width: 270px;
+    }
+    .percentage-java,.percentage-php,.percentage-sql
+    {
+        width: 210px;
+    }
+    .contact
+    {
+        height:150vh;
+    }
+    .form .name,.email ,.subject ,textarea
+    {
+        width:380px;
+    }
+    .form .subject,textarea
+    {
+        width: 380px;
+    }
+}
